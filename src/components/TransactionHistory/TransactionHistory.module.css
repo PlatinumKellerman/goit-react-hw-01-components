@@ -18,7 +18,7 @@
 .table__rows {
     color: #757575;
 }
-.table__rows:nth-child(odd) {
+.table__rows:nth-child(even) {
     background-color: rgba(69, 167, 197, 0.229);
 }
 
