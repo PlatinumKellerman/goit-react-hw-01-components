@@ -1,5 +1,5 @@
 import PropTypes, { arrayOf } from 'prop-types';
-import css from './Statistics.module.css'
+// import css from './Statistics.module.css'
 
 function Statistics({
     title,
