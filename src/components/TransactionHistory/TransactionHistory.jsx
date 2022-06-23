@@ -4,7 +4,7 @@ import css from "./TransactionHistory.module.css"
 
 function TransactionHistory({items}) {
     return (
-<table class="transaction-history">
+<table className="transaction-history">
         <thead>
             <tr>
                 <th>Type</th>
@@ -27,11 +27,12 @@ function TransactionHistory({items}) {
 }
 
 TransactionHistory.propTypes = {
-    items: arrayOf(PropTypes.object).isRequired,
-    id: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    amount: PropTypes.number.isRequired,
-    currency: PropTypes.string.isRequired
+    items: arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+        amount: PropTypes.string.isRequired,
+        currency: PropTypes.string.isRequired
+    }))
 }
 
-export default TransactionHistory;
+export default TransactionHistory;  
