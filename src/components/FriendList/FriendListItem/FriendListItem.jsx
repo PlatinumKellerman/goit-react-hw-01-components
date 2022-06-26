@@ -4,11 +4,7 @@ import s from './friend-list-item.module.css';
 export function FriendListItem({ avatar, name, isOnline }) {
   return (
     <li className={s.item}>
-      {isOnline ? (
-        <span className={s.status__online}></span>
-      ) : (
-        <span className={s.status__offline}></span>
-      )}
+      <span className={s[isOnline ? 'status__online' : 'status__offline']}></span>
       <img className={s.avatar} src={avatar} alt={name} width="48" />
       <p className={s.name}>{name}</p>
     </li>
