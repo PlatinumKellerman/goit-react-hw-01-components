@@ -1,85 +1,63 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-body {
-    background: #f5f4fa;
-}
-
-
 .profile {
-    padding-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    align-items: center;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
+  padding-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
 }
 
 .description {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .avatar {
-    display: block;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #f5f4fa;
+  display: block;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #f5f4fa;
 }
 
 .name {
-    padding-top: 40px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .tag {
-    padding-bottom: 10px;
-    color: #757575;
+  padding-bottom: 10px;
+  color: #757575;
 }
 
 .location {
-    padding-bottom: 40px;
-    color: #757575;
+  padding-bottom: 40px;
+  color: #757575;
 }
 
 .stats {
-    list-style: none;
-    display: flex;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .stats__item {
-    display: flex;
-    flex-direction: column;
-    padding: 26px;
-    align-items: center;
-    background-color:  #e8e2e2;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  align-items: center;
+  background-color: #e8e2e2;
 }
 
 .label {
-    color: #757575;
-    padding-bottom: 5px;
+  color: #757575;
+  padding-bottom: 5px;
 }
 
 .quantity {
-    font-weight: bold;
+  font-weight: bold;
 }

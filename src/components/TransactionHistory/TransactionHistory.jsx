@@ -1,39 +1,40 @@
 import PropTypes, { arrayOf } from 'prop-types';
-import css from "./TransactionHistory.module.css"
+import s from './transaction-history.module.css';
 
-
-function TransactionHistory({items}) {
-    return (
-<table className={css.transaction__table}>
-        <thead className={css.table__head}>
-            <tr className={css.head__rows}>
-                <th className={css.head__data}>Type</th>
-                <th className={css.head__data}>Amount</th>
-                <th className={css.head__data}>Currency</th>
-            </tr>
-        </thead>
-    <tbody>
-{items.map(({ id, type, amount, currency }) => {
-    return (
-        <tr key={id}
-            className={css.table__rows}>
-            <td className={css.table__data}>{type}</td>
-            <td className={css.table__data}>{amount}</td>
-            <td className={css.table__data}>{currency}</td>
+function TransactionHistory({ items }) {
+  return (
+    <table className={s.transaction__table}>
+      <thead className={s.table__head}>
+        <tr className={s.head__rows}>
+          <th className={s.head__data}>Type</th>
+          <th className={s.head__data}>Amount</th>
+          <th className={s.head__data}>Currency</th>
         </tr>
-            )})} 
-    </tbody>      
-</table>
-    )
+      </thead>
+      <tbody>
+        {items.map(({ id, type, amount, currency }) => {
+          return (
+            <tr key={id} className={s.table__rows}>
+              <td className={s.table__data}>{type}</td>
+              <td className={s.table__data}>{amount}</td>
+              <td className={s.table__data}>{currency}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
 }
 
 TransactionHistory.propTypes = {
-    items: arrayOf(PropTypes.shape({
-        id: PropTypes.string.isRequired,
-        type: PropTypes.string.isRequired,
-        amount: PropTypes.string.isRequired,
-        currency: PropTypes.string.isRequired
-    }))
-}
+  items: arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
+};
 
-export default TransactionHistory;  
+export default TransactionHistory;

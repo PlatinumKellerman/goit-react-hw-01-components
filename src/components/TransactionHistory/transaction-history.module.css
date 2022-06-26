@@ -1,0 +1,29 @@
+.transaction__table {
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.head__data {
+  border: 1px solid black;
+  background-color: rgb(69, 167, 197);
+  color: #fff;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 300px;
+}
+
+.table__rows {
+  color: #757575;
+}
+.table__rows:nth-child(even) {
+  background-color: rgba(69, 167, 197, 0.229);
+}
+
+.table__data {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
